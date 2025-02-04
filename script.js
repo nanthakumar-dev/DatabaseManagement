@@ -42,6 +42,7 @@
     if(idEl.value){
       set(ref(database,`users/${idEl.value}`),newUser)
       clearData()
+      return
       
     }
     push(userListById,newUser)
@@ -103,9 +104,11 @@
       
     }
     else if(e.target.classList.contains('delete')){
-      console.log('delete')
-      const id=e.target.dataset.id
-      console.log(id)
-      remove(ref(database,`users/${id}`))
+      if(confirm("You want to delete ")){
+
+        const id=e.target.dataset.id
+        console.log(id)
+        remove(ref(database,`users/${id}`))
+      }
     }
   })

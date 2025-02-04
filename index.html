@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>CRUD OPERATON USING FIREBASE</h2>
+    <form action="#"  id="frm">
+        <input type="text"  id="idEl">
+        <div class="form-group">
+            <label for="nameEl"></label>
+            <input type="text" id="nameEl" placeholder=" Name">
+        </div>
+        <div class="form-group">
+            <label for="ageEl"></label>
+            <input type="text" id="ageEl" placeholder=" Age">
+        </div>
+        <div class="form-group">
+            <label for="cityEl"></label>
+            <input type="text" id="cityEl" placeholder=" City">
+        </div>
+        <button type="submit" class="save">Save</button>
+    </form>
+    <hr>
+    <table>
+        <thead>
+            <th>S.NO</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th >Update</th>
+            <th >Delete</th>
+        </thead>
+        <tbody>
+            
+            <tr >
+                <td>1</td>
+                <td>Nantha</td>
+                <td>18</td>
+                <td>Ramanathapuram</td>
+                <td><button id="update">Update</button></td>
+                <td><button id="delete">Delete</button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>

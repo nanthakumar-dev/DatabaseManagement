@@ -104,7 +104,7 @@
       
     }
     else if(e.target.classList.contains('delete')){
-      if(confirm("You want to delete ")){
+      if(confirm("Are You Sure You Want To Delete")){
 
         const id=e.target.dataset.id
         console.log(id)
